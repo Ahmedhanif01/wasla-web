@@ -79,7 +79,9 @@
                       <li><a href="telecom.html">Telecom Services</a></li>
                       <li><a href="fixed.html">Fixed Services</a></li>
                       <li><a href="iot.html">IoT Services</a></li>
-                      <li><a href="cybersecurity.html">Cybersecurity Services</a></li>
+                      <li>
+                        <a href="cybersecurity.html">Cybersecurity Services</a>
+                      </li>
                       <li>
                         <a href="software.html"
                           >Software Development Services</a
@@ -99,6 +101,16 @@
                     <a href="contact.html">Contact Us<span></span></a>
                   </li>
                 </ul>
+              </div>
+              <div class="de-flex-col">
+                <a
+                  id="rtl-on"
+                  class="btn-custom"
+                  href="index-en.html"
+                  style="margin-bottom: 10px"
+                  >English</a
+                >
+                <span id="menu-btn" style="margin-bottom: 10px"></span>
               </div>
               <div class="de-flex-col">
                 <span id="menu-btn"></span>
@@ -123,17 +135,16 @@
             <div class="col-lg-5 wow fadeInRight" data-wow-delay=".5s">
               <div class="spacer-10"></div>
               <div class="h1 text-light">
-                Welcome to the convergence of imagination<br />
+                مرحبًا بك في اندماج الخيال
                 <div class="typed-strings">
-                  <p>and technology.</p>
+                  <p>والتكنولوجيا</p>
                 </div>
                 <div class="typed"></div>
               </div>
               <p class="lead">
-                Welcome to WASLA for Communications and Information
-                Technology—where boundaries vanish, and possibilities become
-                reality. Let's embark on an extraordinary journey, where your
-                business thrives, and innovation reigns supreme.
+                مرحبًا بك في وصلة للاتصالات وتكنولوجيا المعلومات - حيث تختفي
+                الحدود وتتحول الاحتمالات إلى واقع. دعنا نبدأ في رحلة استثنائية،
+                حيث يزدهر عملك وتسود الابتكار.
               </p>
             </div>
 
@@ -169,14 +180,12 @@
                   aria-labelledby="pills-home-tab"
                 >
                   <p>
-                    WASLA is your partner in unleashing the boundless power of
-                    communication and IT. We offer an array of services to
-                    elevate businesses of all sizes, driving productivity,
-                    efficiency, and security. At WASLA, we're not just a
-                    reliable source; we're a catalyst for creativity and
-                    innovation. Our visionary team crafts tailored solutions
-                    that transcend the ordinary, empowering you to embrace the
-                    extraordinary.
+                    وصلة هي شريكك في تحرير القوة اللانهائية للاتصالات وتكنولوجيا
+                    المعلومات. نقدم مجموعة من الخدمات للنهوض بالأعمال من جميع
+                    الأحجام، مدفعين الإنتاجية والكفاءة والأمان. في وصلة، لسنا
+                    مجرد مصدر موثوق به؛ بل نحن حافز للإبداع والابتكار. يصمم
+                    فريقنا المتطلع حلولًا مخصصة تتجاوز المألوف، مما يمكّنك من
+                    اعتناق الاستثنائية.
                   </p>
                 </div>
               </div>
@@ -192,15 +201,14 @@
           <div class="row align-items-center">
             <div class="col-md-6">
               <p>
-                With our comprehensive services, navigate the seas of
-                communication and connect with the world like never before.
-                Streamline operations, optimize workflows, and embrace
-                efficiency with our guidance.
+                مع خدماتنا الشاملة، توجه في بحار الاتصالات واتصل بالعالم كما لم
+                تفعل من قبل. حسّن العمليات وقم بتحسين سير العمل وتحضّر الكفاءة
+                مع إرشادنا.
               </p>
               <p>
-                In the realm of cybersecurity, our vigilant guardians protect
-                you from digital threats. Trust our expertise as we build
-                impenetrable fortresses, safeguarding your invaluable assets.
+                في مجال الأمان السيبراني، يحموك حراسنا اليقظون من التهديدات
+                الرقمية. ثق بخبرتنا حيث نبني حصونًا لا تخترق، حافظًا على أصولك
+                الثمينة.
               </p>
             </div>
 
@@ -277,6 +285,14 @@
             newTyped();
           },
         });
+      });
+      jQuery("#rtl-on").on("click", function () {
+        var rtl = localStorage.getItem(rtl);
+        if (rtl == "on") {
+          window.localStorage.setItem("rtl", "off");
+        } else {
+          window.localStorage.setItem("rtl", "on");
+        }
       });
     </script>
   </body>
