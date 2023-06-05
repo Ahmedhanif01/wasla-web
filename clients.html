@@ -48,6 +48,13 @@
       type="text/css"
     />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+     
+     h1, h2, h3, h4, h5, h6, a,  p {
+        font-family: 'Ubuntu', sans-serif !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -60,7 +67,7 @@
               <div class="de-flex-col">
                 <!-- logo begin -->
                 <div id="logo">
-                  <a href="index.html">
+                  <a href="en.html">
                     <img alt="" class="logo" src="images/logo-light.png" />
                     <img alt="" class="logo-2" src="images/logo.png" />
                   </a>
@@ -71,7 +78,7 @@
                 <!-- mainmenu begin -->
                 <ul id="mainmenu">
                   <li>
-                    <a href="index.html">Home<span></span></a>
+                    <a href="en.html">Home<span></span></a>
                   </li>
                   <li>
                     <a href="#">Services<span></span></a>
@@ -103,8 +110,16 @@
                 </ul>
               </div>
               <div class="de-flex-col">
-                <span id="menu-btn"></span>
+                <a
+                  id="rtl-on"
+                  class="btn-custom text-center"
+                  href="clients_ar.html"
+                  style="margin-bottom: 10px"
+                  >عربي</a
+                >
+                <span id="menu-btn" style="margin-bottom: 10px"></span>
               </div>
+              
             </div>
           </div>
         </div>
@@ -117,10 +132,11 @@
       <div id="top"></div>
 
       <!-- section begin -->
-      <section
+      <div class="mobile-hide">
+        <section
         id="subheader"
         class="text-light"
-        data-bgimage="url(images/background/1.jpg) bottom"
+        data-bgimage="url(images/background/1.jpg)"
       >
         <div class="center-y relative text-center">
           <div class="container">
@@ -133,6 +149,26 @@
           </div>
         </div>
       </section>
+      </div>
+     
+      <div class="mobile-show">
+        <section
+        id="subheader"
+        class="text-light"
+        data-bgimage="url(images/background/2.jpg)"
+      >
+        <div class="center-y relative text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1>Our Clients</h1>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
       <!-- section close -->
 
       <!-- section begin -->
@@ -142,9 +178,7 @@
             <div class="row sequence">
               <div style="margin: 20px">
                 <div class="feature-box f-boxed style-3">
-                  <i class="bg-color i-circle fa fa-music"></i>
                   <div class="text">
-                    <h4>....</h4>
                     <p>
                       With an extensive track record, we have successfully
                       catered to over 3000 clients through our proficient
@@ -155,15 +189,13 @@
                       clients to concentrate on their fundamental operations.
                     </p>
                   </div>
-                  <i class="wm fa fa-music"></i>
+                  <i class="wm fa fa-users mobile-hide"></i>
                 </div>
               </div>
 
               <div style="margin: 20px">
                 <div class="feature-box f-boxed style-3">
-                  <i class="bg-color i-circle fa fa-hourglass-start"></i>
                   <div class="text">
-                    <h4>....</h4>
                     <p>
                       With a dedicated back-office team, we ensure streamlined
                       and efficient administrative support, enabling our clients
@@ -174,14 +206,12 @@
                       productivity.
                     </p>
                   </div>
-                  <i class="wm fa fa-hourglass-start"></i>
+                  <i class="wm fa fa-building-o mobile-hide"></i>
                 </div>
               </div>
               <div style="margin: 20px">
                 <div class="feature-box f-boxed style-3">
-                  <i class="bg-color i-circle fa fa-hourglass-start"></i>
                   <div class="text">
-                    <h4>....</h4>
                     <p>
                       Additionally, our retention team excels in nurturing
                       long-lasting relationships with our clients. Through
@@ -193,14 +223,12 @@
                       providing tailored solutions to meet evolving needs.
                     </p>
                   </div>
-                  <i class="wm fa fa-hourglass-start"></i>
+                  <i class="wm fa fa-handshake-o mobile-hide"></i>
                 </div>
               </div>
               <div style="margin: 20px">
                 <div class="feature-box f-boxed style-3">
-                  <i class="bg-color i-circle fa fa-hourglass-start"></i>
                   <div class="text">
-                    <h4>....</h4>
                     <p>
                       Irrespective of the industry, our goal remains consistent:
                       to provide our clients with unparalleled services and
@@ -212,7 +240,7 @@
                       resources to their core business endeavors.
                     </p>
                   </div>
-                  <i class="wm fa fa-hourglass-start"></i>
+                  <i class="wm fa fa-check-circle-o mobile-hide"></i>
                 </div>
               </div>
             </div>
@@ -227,26 +255,16 @@
 
     <!-- footer begin -->
     <footer class="footer-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="widget">
-              <a href="index.html"
-                ><img alt="" class="logo" src="images/logo.png"
-              /></a>
-            </div>
-          </div>
+     
 
-          <div class="col-lg-2">
-            <h5>Address</h5>
-            <div class="widget">
-              <p>Building # 7235, Al Olaya District, Riyadh</p>
-            </div>
+      <div class="subfooter container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            &copy; Copyright 2023 - WASLA
           </div>
+          
         </div>
       </div>
-
-      <div class="subfooter container">&copy; Copyright 2023 - AirVon</div>
     </footer>
 
     <!-- Javascript Files

@@ -48,6 +48,13 @@
       type="text/css"
     />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+     
+     h1, h2, h3, h4, h5, h6, a,  p {
+        font-family: 'Ubuntu', sans-serif !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -61,7 +68,7 @@
                 <div class="de-flex-col">
                   <!-- logo begin -->
                   <div id="logo">
-                    <a href="index.html">
+                    <a href="en.html">
                       <img alt="" class="logo" src="images/logo-light.png" />
                       <img alt="" class="logo-2" src="images/logo.png" />
                     </a>
@@ -72,7 +79,7 @@
                   <!-- mainmenu begin -->
                   <ul id="mainmenu">
                     <li>
-                      <a href="index.html">Home<span></span></a>
+                      <a href="en.html">Home<span></span></a>
                     </li>
                     <li>
                       <a href="#">Services<span></span></a>
@@ -102,6 +109,13 @@
                   </ul>
                 </div>
                 <div class="de-flex-col">
+                  <a
+                  id="rtl-on"
+                  class="btn-custom text-center"
+                  href="telecom_ar.html"
+                  style="margin-bottom: 10px"
+                  >عربي</a
+                >
                   <span id="menu-btn"></span>
                 </div>
               </div>
@@ -114,10 +128,13 @@
       <div class="no-bottom no-top" id="content">
         <div id="top"></div>
         <!-- section begin -->
-        <section
+
+
+        <div class="mobile-hide">
+          <section
           id="subheader"
           class="text-light"
-          data-bgimage="url(images/background/1.jpg) bottom"
+          data-bgimage="url(images/background/1.jpg)"
         >
           <div class="center-y relative text-center">
             <div class="container">
@@ -137,67 +154,90 @@
             </div>
           </div>
         </section>
+        </div>
+
+        <div class="mobile-show">
+          <section
+          id="subheader"
+          class="text-light"
+          data-bgimage="url(images/background/2.jpg)"
+        >
+          <div class="center-y relative text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h1>Telecom Services</h1>
+                  <p>
+                  At WASLA, we specialize in delivering comprehensive telecom
+                    solutions for businesses, encompassing a wide array of
+                    services. Our extensive range of offerings caters to diverse
+                    communication requirements, ensuring seamless connectivity
+                    and optimal performance.
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+       
 
         <!-- section close -->
         <section aria-label="section" data-bgcolor="#ffffff">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-6 text-center">
+              <div class="col-md-4 mb40 text-center">
                 <i class="icon-big fa fa-mobile-phone bg-color text-light"></i>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <h3>Mobile plans</h3>
-              --> With our mobile plans, we provide reliable and flexible options
+                With our mobile plans, we provide reliable and flexible options
                 to keep your workforce connected on the go.</br> 
-            --> Our fixed internet services deliver high-speed and stable connectivity, enabling
+                Our fixed internet services deliver high-speed and stable connectivity, enabling
                 efficient data transmission and smooth operations.</br> 
-        --> Additionally, we offer cutting-edge IoT solutions, empowering businesses to leverage the power of connected devices and unlock new opportunities for growth.
+                Additionally, we offer cutting-edge IoT solutions, empowering businesses to leverage the power of connected devices and unlock new opportunities for growth.
               </div>
             </div>
           </div>
         </section>
 
-        <section aria-label="section" data-bgcolor="#f0f4fd">
+        <section aria-label="section" data-bgcolor="#b0d0d3">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <h3>Cloud services</h3>
-              --> Our cloud services enable secure data storage, scalable
+                Our cloud services enable secure data storage, scalable
                 computing resources, and streamlined collaboration, ensuring
                 your business can harness the full potential of cloud
                 technology. </br> 
-            --> Moreover, we provide innovative drone solutions that
+                Moreover, we provide innovative drone solutions that
                 enhance operational efficiency, enabling aerial data collection
                 and surveillance in various industries.
               </div>
-              <div class="col-md-6 text-center">
-                <i class="icon-big fa fa-list-ol bg-color text-light"></i>
+              <div class="col-md-4 mt40 text-center">
+                <i class="icon-big fa fa-cloud bg-color text-light"></i>
               </div>
             </div>
           </div>
         </section>
 
-        <div
-          style="
-            max-width: 60vw;
-            margin: 12px auto;
-            padding: 20px;
-            background-color: rgb(129 104 227);
-            border-radius: 5px;
-            background-size: cover;
-          "
-        >
-          <div class="row">
-            <div class="col-md-12">
-              <p style="font-size: 18px; line-height: 1.5; color: #ffffff">
-                At WASLA, we take pride in offering top-notch telecom services
-                that are customized to meet the unique needs of your business.
-                We are committed to delivering high-quality solutions that drive
-                productivity, efficiency, and success.
-              </p>
+        <section aria-label="section" data-bgcolor="#ffffff">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4 mb40 text-center">
+                <i class="icon-big fa fa-microchip bg-color text-light"></i>
+              </div>
+              <div class="col-md-8">
+                <h3>WASLA</h3>
+                We at WASLA, we take pride in offering top-notch telecom services that are customized to meet the unique needs of your business.
+              </br> We are committed to delivering high-quality solutions that drive productivity, efficiency, and success.
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+       
       </div>
       <!-- content close -->
 
@@ -211,27 +251,17 @@
 
     <!-- footer begin -->
     <footer class="footer-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="widget">
-                <a href="index.html"
-                  ><img alt="" class="logo" src="images/logo.png"
-                /></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-2">
-              <h5>Address</h5>
-              <div class="widget">
-                <p>Building # 7235, Al Olaya District, Riyadh</p>
-              </div>
-            </div>
+     
+
+      <div class="subfooter container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            &copy; Copyright 2023 - WASLA
           </div>
+         
         </div>
-  
-        <div class="subfooter container">&copy; Copyright 2023 - AirVon</div>
-      </footer>
+      </div>
+    </footer>
     </div>
 
     <!-- Javascript Files

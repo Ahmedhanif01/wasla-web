@@ -48,6 +48,13 @@
       type="text/css"
     />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+     
+     h1, h2, h3, h4, h5, h6, a,  p {
+        font-family: 'Ubuntu', sans-serif !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -61,7 +68,7 @@
                 <div class="de-flex-col">
                   <!-- logo begin -->
                   <div id="logo">
-                    <a href="index.html">
+                    <a href="en.html">
                       <img alt="" class="logo" src="images/logo-light.png" />
                       <img alt="" class="logo-2" src="images/logo.png" />
                     </a>
@@ -72,7 +79,7 @@
                   <!-- mainmenu begin -->
                   <ul id="mainmenu">
                     <li>
-                      <a href="index.html">Home<span></span></a>
+                      <a href="en.html">Home<span></span></a>
                     </li>
                     <li>
                       <a href="#">Services<span></span></a>
@@ -106,6 +113,13 @@
                   </ul>
                 </div>
                 <div class="de-flex-col">
+                  <a
+                  id="rtl-on"
+                  class="btn-custom text-center"
+                  href="partnerships_ar.html"
+                  style="margin-bottom: 10px"
+                  >عربي</a
+                >
                   <span id="menu-btn"></span>
                 </div>
               </div>
@@ -119,10 +133,11 @@
         <div id="top"></div>
 
         <!-- section begin -->
+        <div class="mobile-show">
         <section
           id="subheader"
           class="text-light"
-          data-bgimage="url(images/background/1.jpg) bottom"
+          data-bgimage="url(images/background/2.jpg)"
         >
           <div class="center-y relative text-center">
             <div class="container">
@@ -140,15 +155,38 @@
             </div>
           </div>
         </section>
+        </div>
+
+        <div class="mobile-hide">
+          <section
+            id="subheader"
+            class="text-light"
+            data-bgimage="url(images/background/1.jpg)"
+          >
+            <div class="center-y relative text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <div class="spacer-single"></div>
+                    <h1>Our Partnerships</h1>
+                    <p>
+                      At WASLA, we value the importance of valuable partnerships
+                      in delivering top-notch solutions for your business.
+                    </p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
         <!-- section close -->
 
         <section aria-label="section" data-bgcolor="#ffffff">
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-5">
-                <img src="images/misc/1.png" class="img-fluid" alt="" />
-              </div>
-              <div class="col-md-6 offset-md-1">
+              
+              <div class="col-md-10 offset-md-1">
                 <h3>We started with passion</h3>
                 <p>
                   Our official partnerships with telecom operators and ISPs
@@ -179,26 +217,16 @@
 
       <!-- footer begin -->
       <footer class="footer-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="widget">
-                <a href="index.html"
-                  ><img alt="" class="logo" src="images/logo.png"
-                /></a>
-              </div>
-            </div>
+     
 
-            <div class="col-lg-2">
-              <h5>Address</h5>
-              <div class="widget">
-                <p>Building # 7235, Al Olaya District, Riyadh</p>
-              </div>
+        <div class="subfooter container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              &copy; Copyright 2023 - WASLA
             </div>
+           
           </div>
         </div>
-
-        <div class="subfooter container">&copy; Copyright 2023 - AirVon</div>
       </footer>
     </div>
 
