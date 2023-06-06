@@ -856,7 +856,7 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 }
 
 #menu-btn:hover:before {
-	color: #222;
+	color: #fff;
 }
 
 .rtl #menu-btn {
@@ -874,7 +874,7 @@ header.header-mobile.header-light #menu-btn:hover {
 }
 
 header.header-mobile.header-light #menu-btn {
-	color: #222;
+	color: #fff;
 }
 
 /* ================================================== */
@@ -978,6 +978,7 @@ footer {
 footer.footer-light {
 	background: #B0D0D3;
 	color: #000;
+	padding-top: 40px;
 }
 
 footer.footer-light a {
@@ -1112,7 +1113,6 @@ header.s2 #mainmenu>li>a {
 
 header.header-mobile {
 	position: absolute;
-	background: #03010E;
 	top: 0;
 	height: 90px;
 }
@@ -3615,7 +3615,7 @@ i.font60 {
 
 .feature-box.style-3 i.wm {
 	position: absolute;
-	font-size: 240px;
+	font-size: 140px;
 	background: none;
 	width: auto;
 	height: auto;
@@ -3641,7 +3641,7 @@ i.font60 {
 }
 
 .text-light .feature-box.f-boxed {
-	background: rgba(0, 0, 0, .1);
+	background: #b0d0d3;
 }
 
 .feature-box.f-boxed:hover {
@@ -12283,10 +12283,11 @@ nav {
 header.header-mobile {
 	overflow: hidden;
 	position: relative;
+	background-color: #0C1423;
 }
 
 header.header-mobile #mainmenu {
-	float: none;
+	float: left;
 	z-index: 200;
 	width: 100%;
 	margin: 0;
